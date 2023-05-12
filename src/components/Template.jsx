@@ -5,7 +5,7 @@ import { translations } from "../assets/translations";
 
 const Template = () => {
     const dispatch = useDispatch();
-    const { language, theme } = useSelector((state) => state.settings);
+    const { language } = useSelector((state) => state.settings);
 
     return(
         <div>

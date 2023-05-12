@@ -1,15 +1,15 @@
 import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
-import './App.css'
 import Template from './components/Template'
+import Login from './components/Login'
+import { useSelector } from 'react-redux'
 
 function App() {
-  const [count, setCount] = useState(0)
+  const { theme } = useSelector((state) => state.settings);
 
   return (
-    <div>
+    <div className='{theme}'>
       <Template />
+      <Login />
     </div>
   )
 }

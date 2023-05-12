@@ -5,8 +5,8 @@ import settingSlices from "./slices/settings/settingSlices";
 
 const store = configureStore({
     reducer: {
-        auth: authSlice.reducer,
-        settings: settingSlices.reducer
+        auth: authSlice,
+        settings: settingSlices,
     }
 });
 
